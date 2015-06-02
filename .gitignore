@@ -5,6 +5,6 @@ bower_components/
 dist/
 
 src/app/config.js
-config/
-!config/*.dist
+config/*
+!config/*.json.dist
 .DS_Store
