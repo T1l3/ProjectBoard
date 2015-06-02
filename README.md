@@ -6,40 +6,37 @@ An AngularJS dashboard framework
 
 - Install dependencies:
 
-npm install
-
-bower install
+    npm install
+    bower install
 
 
 - Configuration
 
     cp config/local.json.dist config/local.json
-
     gulp config
-
     gulp serve
 
 
 ## Structure
 
-  - config # Your global config
-  - src
-    - app
-        - components
-        - dataProviders
-            - your_dataProvider
-                - your_dataProvider.js
-        - projects
-            - your_project
-                - assets/
-                - your_project.config.json
-                - your_project.controller.js
-                - your_project.html
-        - widgets
-            - assets/
-            - your_widget.directive.js
-            - your_widget.html
-    - assets
+    - config # Your global config
+    - src
+      - app
+          - components
+          - dataProviders
+              - your_dataProvider
+                  - your_dataProvider.js
+          - projects
+              - your_project
+                  - assets/
+                  - your_project.config.json
+                  - your_project.controller.js
+                  - your_project.html
+          - widgets
+              - assets/
+              - your_widget.directive.js
+              - your_widget.html
+      - assets
 
 ## Next steps
 
