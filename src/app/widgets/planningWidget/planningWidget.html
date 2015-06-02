@@ -1,0 +1,11 @@
+<div class="widget widget-planning" ng-class="{'loaded': loaded}">
+    <ul>
+        <li class='fx-bounce-up fx-easing-elastic fx-speed-600' ng-repeat="item in items| orderBy: 'date'  track by $index" style="border-left: solid 5px {{ item.color }}">
+            <div class="title">{{ item.name }}</div>
+            <div class="date">
+                {{ item.date | date: 'EEE, MMM d' }}
+                <div class="tag">{{ item.tag }}</div>
+            </div>
+        </li>
+    </ul>
+</div>

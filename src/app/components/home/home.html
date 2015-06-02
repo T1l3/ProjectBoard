@@ -1,0 +1,33 @@
+<div>
+    <header ng-include="'app/components/navbar/navbar.html'"></header>
+</div>
+<div class="project-block fullscreen center-slick">
+    <slick infinite="true" speed="300" slides-to-show="3" touch-move="false" slides-to-scroll="1" center-mode="true" init-onload="true" data="projects" center-padding="50px" variable-width="true" arrows="false" focus-on-select="true">
+        <div ng-repeat="project in projects">
+            <div class="block-container">
+                <div class="block-image" style="background: url('{{ project.image }}') no-repeat center;"></div>
+                <div class="block-content">
+                    <h2>
+                        <a ui-sref="dashboard.view({projectSlug: project.slug})">{{ project.title }}</a>
+                    </h2>
+                </div>
+                <div class="description-block">
+                    <p>{{ project.description }}</p>
+                    <p class="url">
+                        <a href="{{ project.url }}">{{ project.url }}</a>
+                    </p>
+                </div>
+                <div class="team-block">
+                    <div class="team">
+                        <div class="team-label label">Team</div>
+                        <ul>
+                            <li ng-repeat="member in project.team">
+                                <img ng-src="/assets/images/avatars/{{ member.avatar }}" alt="{{ member.name }}">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </slick>
+</div>

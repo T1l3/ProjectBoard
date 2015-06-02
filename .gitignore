@@ -1,0 +1,10 @@
+node_modules/
+bower_components/
+.sass-cache/
+.tmp/
+dist/
+
+src/app/config.js
+config/
+!config/*.dist
+.DS_Store

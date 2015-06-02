@@ -1,0 +1,38 @@
+.widget.widget-planning {
+  // background: $blue;
+  background: #34495e;
+
+  ul {
+    color: #767676;
+    height: 100%;
+    position: relative;
+  }
+  li {
+    background-color: #F8F8F8;
+    padding: 15px;
+    border-bottom: solid 1px #CFCFCF;
+    height: 100%;
+    transition: height .4s ease-out, margin .6s ease-out;
+    margin-bottom: 300px;
+    // &:nth-child(1){ transition-delay: .5s; }
+    &:nth-child(2){ transition-delay: .1s}
+    &:nth-child(3){ transition-delay: .2s}
+    // &:nth-child(4){ transition-delay: 2s }
+    .title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .date {
+      font-size: 12px;
+    }
+    .tag {
+      text-align: right;
+    }
+  }
+  &.loaded {
+    li {
+      height: 33%;
+      margin-bottom: 3px;
+    }
+  }
+}

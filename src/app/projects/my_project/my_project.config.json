@@ -1,0 +1,40 @@
+{
+  "title": "My awesome project",
+  "slug": "my_project",
+  "url": "http://thibaultpierre.com",
+  "tags": ["cool", "dashboard", "angular"],
+  "image": "http://www.publicdomainpictures.net/pictures/20000/velka/gold-fields.jpg",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque dapibus lacinia. Ut egestas nunc at odio lobortis facilisis. Maecenas sed sapien id ipsum sagittis viverra",
+  "team": [
+    {
+      "name": "Thibault",
+      "avatar": "thibault.jpg"
+    }
+  ],
+  "widgets": {
+    "url": "http://thibaultpierre.com",
+    "instagram": {
+      "apiKey": "bce8761741424bafbc8a3d40f967ed8e"
+    },
+    "planning": {
+      "items": [
+        {
+          "name": "Prod deploy",
+          "date": "2015-05-28",
+          "tag": "v1.1.0",
+          "color": "#7DBE45"
+        }, {
+          "name": "Preprod deploy",
+          "date": "2015-05-20",
+          "tag": "v1.0.0",
+          "color": "#139AC2"
+        }, {
+          "name": "Prod deploy",
+          "date": "2015-05-30",
+          "tag": "v1.1.0",
+          "color": "#F7924D"
+        }
+      ]
+    }
+  }
+}

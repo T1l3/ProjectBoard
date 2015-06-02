@@ -1,0 +1,48 @@
+.widget.widget-simpleNumber {
+  transition: background-color ease 0.5s;
+  &.number-up {
+    background: $green;
+  }
+  &.number-down {
+    background: $red;
+  }
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+  .icon {
+    font-size: 80px;
+    margin-top: 40px;
+    transition: all .4s ease-out;
+  }
+  .number, .subtitle {
+    opacity: 0;
+    font-size: 20px;
+    transition: all .4s ease-out;
+  }
+
+  &.loaded {
+    .icon {
+      font-size: 40px;
+      margin-top: 0px;
+    }
+    .number, .subtitle {
+      opacity: 1;
+    }
+    .number {
+      font-size: 50px;
+      font-weight: bold;
+    }
+    .subtitle {
+      font-size: 14px;
+    }
+  }
+
+  &.widget-simpleNumber-twitter {
+    background: #4597F0;
+    text-align: center;
+  }
+}

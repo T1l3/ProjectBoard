@@ -1,0 +1,27 @@
+<div class="widget widget-social-facebook">
+    <div class="widget-container">
+        <div class="big-count-wrapper">
+            <div class="count">
+                <div><i class="fa fa-facebook-official"></i></div>
+                {{ count.facebook_total_count | number : fractionSize }}
+            </div>
+            <div class="label">interactions</div>
+        </div>
+        <div class="mini-count-wrapper">
+            <div  class="mini-count-blocks">
+                <div class="mini-count-block">
+                    <div class="count">{{ count.facebook_like_count | number : fractionSize }}</div>
+                    <div class="label">likes</div>
+                </div>
+                <div class="mini-count-block">
+                    <div class="count">{{ count.facebook_share_count | number : fractionSize }}</div>
+                    <div class="label">shares</div>
+                </div>
+                <div class="mini-count-block">
+                    <div class="count">{{ count.facebook_comment_count | number : fractionSize }}</div>
+                    <div class="label">comments</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

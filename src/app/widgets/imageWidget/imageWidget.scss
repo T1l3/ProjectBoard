@@ -1,0 +1,11 @@
+.widget.widget-image {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}

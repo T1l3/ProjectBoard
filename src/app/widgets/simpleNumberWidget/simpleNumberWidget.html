@@ -1,0 +1,13 @@
+<div class="widget widget-simpleNumber" ng-class="[class, {'loaded': loaded, 'number-up': isNumberUp, 'number-down': !isNumberUp}]">
+    <div class="widget-container">
+        <div class="content-wrapper">
+            <div>
+                <div class="icon"><i class="fa" ng-class="icon"></i></div>
+                <div class="number" count-to="{{ number }}"></div>
+                <div class="subtitle">{{ subtitle }}</div>
+            </div>
+        </div>
+        <span class="spinner animate-hide" ng-show="onRefresh"></span>
+        <div class="last-update animate-hide" ng-hide="onRefresh" am-time-ago="lastUpdate"></div>
+    </div>
+</div>
