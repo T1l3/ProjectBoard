@@ -24,7 +24,6 @@ A dataProvider must be of the type yourProvider (name + "Provider")
             var endPoint = 'https://api.instagram.com/v1/tags/' + tag + '/media/recent?client_id=' + apiKey + '&callback=JSON_CALLBACK&count=1';
             // Return a promise
             return $http.jsonp(endPoint).then(function(data){
-              /* jshint camelcase: false */
               return data.data.data[0].images.low_resolution.url;
             });
           }
