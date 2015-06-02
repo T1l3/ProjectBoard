@@ -6,16 +6,21 @@ An AngularJS dashboard framework
 
 - Install dependencies:
 
+```
     npm install
-    bower install
 
+    bower install
+```
 
 - Configuration
 
+```
     cp config/local.json.dist config/local.json
-    gulp config
-    gulp serve
 
+    gulp config
+
+    gulp serve
+```
 
 ## Structure
 
